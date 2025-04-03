@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../assets/Logo.svg'; 
+import Menu from './Menu.astro';
+---
+
+<header class="bg-primary-100">
+    <div>
+        <a href="#">
+            <Image class="size-15" src={Logo} alt="Logo MTTechnology compania de desarrollo de software y sistemas web." />
+        </a>
+
+        <Menu />
+    </div>
+</header>

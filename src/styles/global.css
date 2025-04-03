@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+.bg-primary-100 {
+    background-color: hsl(217, 28%, 15%);
+}
+
+.bg-primary-200 {
+    background-color: hsl(218, 28%, 13%);
+}
+
+.bg-primary-300 {
+    background-color: hsl(216, 53%, 9%);
+}
+
+.bg-primary-400 {
+    background-color: hsl(219, 30%, 18%);
+}
+
+.font-primary {
+    font-family: 'Open Sans', 'sans-serif';
+}
+.font-secondary {
+    font-family: 'Raleway', 'sans-serif';
+}

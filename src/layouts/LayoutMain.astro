@@ -1,0 +1,42 @@
+---
+import "../styles/global.css";
+
+const siteInfo = {
+    system: 'MT Technology',
+    title: 'Home',
+    description: 'Desarrollo de paginas web y sistemas a la medida para la resolucion y mejoras de operaciones y procesos de negocio.',
+    keywords: 'desarrollo web, desarrollo de software, sistemas a la medida, paginas web, aplicaciones web, desarrollo de aplicaciones, desarrollo de sistemas, soluciones tecnologicas',
+}
+
+const { system, title, description, keywords } = siteInfo;
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+        <meta name="author" content="MT Technology" />
+		<title>{system} - {title}</title>
+	</head>
+	<body class="bg-primary-200 text-white">
+		<slot />
+	</body>
+</html>
+
+<style>
+    
+
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+    }
+
+</style>
