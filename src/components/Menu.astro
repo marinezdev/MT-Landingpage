@@ -1,3 +1,18 @@
-<div class="font-primary">
-    navbar
-</div>
+---
+const navItems = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Team', href: '/team' },
+  { name: 'Contact', href: '/contact' },
+];
+---
+
+<nav class="font-primary">
+    <ul class="items-center flex justify-start gap-8">
+        {navItems.map((item) => 
+            <li>
+                <a class="text-[#cbd4dc] transition duration-300 hover:text-white" href={item.href}> {item.name}</a>
+            </li>  
+        )}
+    </ul>
+</nav>
