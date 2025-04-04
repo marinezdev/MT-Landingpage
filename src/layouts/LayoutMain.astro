@@ -4,12 +4,13 @@ import "../styles/global.css";
 const siteInfo = {
     system: 'MT Technology',
     title: 'Home',
-    description: 'Desarrollo de paginas web y sistemas a la medida para la resolucion y mejoras de operaciones y procesos de negocio.',
-    keywords: 'desarrollo web, desarrollo de software, sistemas a la medida, paginas web, aplicaciones web, desarrollo de aplicaciones, desarrollo de sistemas, soluciones tecnologicas',
+    description: 'Desarrollo de paginas web y sistemas a la medida para la resolucion y mejoras de operaciones y procesos de negocio. Desarrollamos soluciones digitales a medida para tu negocio.',
+    keywords: 'desarrollo web, desarrollo de software, sistemas a la medida, paginas web, aplicaciones web, desarrollo de aplicaciones, desarrollo de sistemas, soluciones tecnologicas, soluciones digitales a medida',
 }
 
 const { system, title, description, keywords } = siteInfo;
 
+import Header from '../components/Header.astro';
 ---
 
 <!doctype html>
@@ -25,18 +26,18 @@ const { system, title, description, keywords } = siteInfo;
 		<title>{system} - {title}</title>
 	</head>
 	<body class="bg-[#181f2a] text-white">
+		<!-- Header section -->
+		<Header />
+
 		<slot />
 	</body>
 </html>
 
 <style>
-    
-
 	html,
 	body {
 		margin: 0;
 		width: 100%;
 		height: 100%;
     }
-
 </style>

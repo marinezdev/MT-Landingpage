@@ -1,0 +1,66 @@
+---
+import { Image } from 'astro:assets';
+import HeroImg from '../assets/illustration-intro.png';
+---
+
+<!-- 
+<section class="bg-[#1c2431]">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-4">
+        <div class="text-white text-center md:text-left">
+            <h1 class="text-4xl font-bold mb-4">Transformando Ideas en Realidad</h1>
+            <p class="mb-6">Desarrollamos soluciones digitales a medida para tu negocio.</p>
+            <a href="#contact" class="bg-[#ff5c00] text-white py-2 px-4 rounded">Contáctanos</a>
+        </div>
+        <img src={HeroImg} alt="Ilustración de desarrollo web" class="w-full md:w-1/2" />
+        <Image src={HeroImg} alt="Hero Img" class="w-full md:w-1/2"/>
+    </div>
+</section>
+-->
+
+<section class="relative font-secondary">
+    <div class="hero-bg">
+    </div>
+
+    <div class="container max-w-[600px] mx-auto pt-10">
+        <Image src={HeroImg} alt="Hero Img" />
+
+        <div class="text-center">
+            <h1 class="mb-3 text-2xl font-bold md:text-3xl">All your files in one secure location, accessible anywhere</h1>
+            <p class="mb-3">
+                Fylo stores your most important files in one secure location, accessible anywhere. 
+                All your files are backed up automatically and can be shared easily.
+                Never worry about losing access to your files again.
+            </p>
+            <button class="relative rounded-full bg-gradient-to-tr from-[#65e2d9] to-[#339ecc] px-12 py-3 font-700 text-whitez hover:bg-white hover:text-[#65e2d9] hover:font-bold transition duration-300 ease-in-out mb-5">
+                Get Started
+            </button>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero-bg {
+        background: hsl(217, 28%, 15%) url(../assets/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 14rem;
+        z-index: -1;
+    }
+
+    @media (min-width: 768px) {
+        .hero-bg {
+            background: hsl(217, 28%, 15%) url(../assets/bg-curvy-desktop.svg);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: 100% 279px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+</style>
